@@ -1,0 +1,96 @@
+<!--Assignment 1
+Task1: Use Bootstrap grid system to design a Services section
+    -Showcases at least 3 services
+    -each service needs an icon/image, title, and short description
+Task 2: Create a contact form
+    -using Bootstrap components
+    -include fields for user's name, email, selection of the service they are interested in, and a message box-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating a Responsive Service Page with Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, intiial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Tech Solutions</h1>
+            <p>Welcome to Tech Solutions! Below is a list of our services that we provide, along with a description of each service.</p>
+        </header>
+        <section class="container-fluid my-5">
+            <!--Task 1-->
+            <h2 class="mb-4">Services</h2>
+            <div class="row g-4">
+                <article class="col-12 col-md-4">
+                    <div class="p-3">
+                        <h3 class="mt-3">Cybersecurity</h3>
+                        <img src="pictures/cybersecurity.jpg" class="img-fluid" style="border-radius: 5px;" alt="A picture of a lock encrypted with cybersecurity measures">
+                        <p class="blockquote">Here at Tech Solutions, we understand that your data is of the upmost importance. We pride ourselves on developing the best cybersecurity suites in the business.</p>  
+                    </div>
+                </article>
+                <article class="col-12 col-md-4">
+                    <div class="p-3">
+                        <h3 class="mt-3">Analytics</h3>
+                        <img src="pictures/modern-analytic.jpg" class="img-fluid" style="border-radius: 5px;" alt="A picture of data presented in a graph">
+                        <p class="blockquote">Our Data Analytics software is some of the most accurate and efficient you can find in the open market. You can be sure that you will always have the information you need to make critical decisions regarding your business.</p>
+                    </div>
+                </article>
+                <article class="col-12 col-md-4">
+                    <div class="p-3">
+                        <h3 class="mt-3">Cloud Services</h3>
+                        <img src="pictures/cloud.jpeg" class="img-fluid" style="border-radius: 5px;" alt="A picture demonstrating cloud computing">
+                        <p class="blockquote">If you find that you are always running out of space on your computer system, our Cloud Computing services are known to be among the most secure and efficient. We at Tech Solutions believe in colabboration, so we also make it easy for you to add collaborators to your cloud projects.</p>
+                    </div>
+                </article>
+            </div>      
+        </section>
+        <footer>
+            <!--Task 2-->
+            <form>
+                <div class="row mb-3">
+                    <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your full name">
+                    </div>
+                </div>        
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email Address">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Services: </label>
+                    <div role="alert" aria-live="assertive">Check all the services that are of interest (select multiple).</div>
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check"> 
+                            <label for="cybersecurity" class="form-check-label">Cybersecurity</label>
+                            <input class="form-check-input" type="checkbox" id="cybersecurity" name="cybersecurity" value="yes">
+                        </div>
+                        <div class="form-check">
+                            <label for="analytics" class="form-check-label">Analytics</label>
+                            <input class="form-check-input" type="checkbox" id="analytics" name="analytics" value="yes">
+                        </div>
+                        <div class="form-check">
+                            <label for="cloud" class="form-check-label">Cloud Services</label>
+                            <input class="form-check-input" type="checkbox" id="cloud" name="cloud" value="yes">
+                        </div>
+                    </div>
+                </div>
+                <label for="comments">Additional Comments:</label>
+                <div class="form-floating">
+                    
+                    <textarea class="form-control" name="comments" id="commments" style="height: 100px" placeholder="Share any additional comments or questions here."></textarea>
+                </div>
+                <div class="btn-group" role="group" aria-label="submit and reset buttons">
+                    <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    <button type="submit" class="btn btn-outline-primary">Submit</button> 
+                </div>
+
+            </form>
+        </footer>
+    </body>
+</html>
