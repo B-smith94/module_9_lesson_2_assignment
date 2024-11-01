@@ -28,10 +28,11 @@ Task 4: Create a footer with a grid layout
     </head>
     <body>
         <!--Assignment 2, Task 1-->
-        <header style="background-image: url('pictures/tech_background.jpg'); background-color: #cccccc;">
+        <header class="img-thumbnail" style="background-image: url('pictures/tech_background.jpg'); background-color: #cccccc;">
             <h1 class="text-center text-light">Tech Solutions</h1>
             <p class="text-center text-light">Welcome to Tech Solutions, your go-to company for all your technological needs!</p>
         </header>
+        <!--Assignment 2, Task 3-->
         <section class="container my-5">
             <div class="row g-4">
                 <div class="col-12 col-md-8">
@@ -52,7 +53,7 @@ Task 4: Create a footer with a grid layout
             </div>
         </section>
         <section class="container-fluid my-5"> 
-            <!--Assignment 1, Task 1-->
+            <!--Assignment 1, Task 1 and Assignment 2, Task 2-->
             <h2 class="mb-4">Services</h2>
             <div class="row g-4">
                 <article class="col-12 col-md-4">
@@ -79,7 +80,7 @@ Task 4: Create a footer with a grid layout
             </div>      
         </section>
         <section>
-            <!--Assignment 2, Task 2-->
+            <!--Assignment 1, Task 2-->
             <form>
                 <div class="row mb-3">
                     <label for="name" class="col-sm-2 col-form-label">Name:</label>
@@ -122,8 +123,33 @@ Task 4: Create a footer with a grid layout
                 </div>
             </form>
         </section>
-        <footer>
-            
+        <!--Assignment 2, Task 4-->
+        <footer class="container-flex p-5 bg-info">
+            <div class="row mb-3">
+                <div class="col-12 col-md-4">
+                    <h5>Contact information</h5>
+                    <ul>
+                        <li>Phone: <a href="tel:123-456-7890">(123) 456-7890</a></li>
+                        <li>Email: <a href="mailto:techsolutions@example.com">techsolutions@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5>Social Media Links</h5>
+                    <ul>
+                        <li><a href="http://www.facebook.com">Facebook</a></li>
+                        <li><a href="http://www.bsky.com">Bluesky</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5>Sign Up for Our Newsletter:</h5>
+                    <form>
+                        
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email here">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
